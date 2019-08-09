@@ -14,7 +14,7 @@
 			
 			<div class="form-group">
 				<label for="status">Status</label>
-				<input type="text" class="form-control" id="status" v-model="product.status">
+				<input type="number" class="form-control" id="status" v-model="product.status">
 			</div>
 			
 			<div class="form-group">
