@@ -12,7 +12,7 @@
 
     methods: {
       fetchData() {
-        axios.delete('http://localhost:3000/api/product/'+this.$route.params.id)
+        axios.delete('/api/product/'+this.$route.params.id)
         .then((response) => {
 			this.$router.push('/')
         })

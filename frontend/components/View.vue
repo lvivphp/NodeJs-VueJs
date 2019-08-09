@@ -61,7 +61,7 @@
 
     methods: {
       fetchData() {
-        axios.get('http://localhost:3000/api/product/'+this.$route.params.id)
+        axios.get('/api/product/'+this.$route.params.id)
         .then((response) => {
 		  console.log(response);
           this.product = response.data

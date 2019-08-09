@@ -55,7 +55,7 @@
 
 		methods: {
 			fetchData() {
-				axios.get('http://localhost:3000/api/product/'+this.$route.params.id)
+				axios.get('/api/product/'+this.$route.params.id)
 				.then((response) => {
 					console.log(response);
 					this.product = response.data
@@ -66,7 +66,7 @@
 			},
             editProduct(event) {
                 if (event) event.preventDefault();
-                let url = 'http://localhost:3000/api/product/'+this.$route.params.id;
+                let url = '/api/product/'+this.$route.params.id;
 				
 				let form = new FormData();
 				form.append('title', this.product.title);

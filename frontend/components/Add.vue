@@ -51,7 +51,7 @@
         methods: {
             addProduct(event) {
                 if (event) event.preventDefault();
-                let url = 'http://localhost:3000/api/product';
+                let url = '/api/product';
 				
 				let form = new FormData();
 				form.append('title', this.product.title);
