@@ -2,5 +2,3 @@
 .env
 package-lock.json
 node_modules
-public/uploads
-public/build
